@@ -25,3 +25,55 @@ body.lock {
   -ms-transition: top 0.3s ease-in-out;
   -o-transition: top 0.3s ease-in-out;
 }
+
+h1 {
+  font-size: calc(46px + (60 - 46) * ((100vw - 320px) / (1920 - 320)));
+  text-transform: uppercase;
+}
+h2 {
+  font-size: calc(32px + (42 - 32) * ((100vw - 320px) / (1920 - 320)));
+}
+
+h3 {
+  font-size: calc(30px + (40 - 30) * ((100vw - 320px) / (1920 - 320)));
+}
+
+h4 {
+  font-size: calc(26px + (36 - 26) * ((100vw - 320px) / (1920 - 320)));
+}
+
+p {
+  font-size: calc(20px + (30 - 20) * ((100vw - 320px) / (1920 - 320)));
+  font-weight: 500;
+}
+
+span {
+  font-size: calc(20px + (30 - 20) * ((100vw - 320px) / (1920 - 320)));
+}
+
+//doesn't let font sizes grow in more than 1920px screen sizes
+@media (min-width: 1920px) {
+  h1 {
+    font-size: 60px;
+  }
+
+  h2 {
+    font-size: 42px;
+  }
+
+  h3 {
+    font-size: 40px;
+  }
+
+  h4 {
+    font-size: 36px;
+  }
+
+  p {
+    font-size: 30px;
+  }
+
+  span {
+    font-size: 30px;
+  }
+}
