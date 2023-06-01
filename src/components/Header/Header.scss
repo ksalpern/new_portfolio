@@ -16,10 +16,18 @@
   -ms-transform: translateX(-50%);
   -o-transform: translateX(-50%);
 
+  @media (min-width:768px) {
+    padding: 30px;
+  }
+
   &__menu {
     display: flex;
     align-items: center;
     gap: 10px;
+
+    @media (min-width:768px) {
+      gap: 25px;
+    }
 
     p {
       padding: 5px;
@@ -28,6 +36,10 @@
       -moz-border-radius: 2px;
       -ms-border-radius: 2px;
       -o-border-radius: 2px;
+
+      @media (min-width:768px) {
+        padding: 10px;
+      }
     }
 
     &:hover {
@@ -45,6 +57,14 @@
             -ms-transform: rotate(-5deg);
             -o-transform: rotate(-5deg);
             transform-origin: left;
+
+            @media (min-width:768px) {
+              transform: rotate(-10deg);
+              -webkit-transform: rotate(-10deg);
+              -moz-transform: rotate(-10deg);
+              -ms-transform: rotate(-10deg);
+              -o-transform: rotate(-10deg);
+            }
           }
         }
       }
@@ -72,6 +92,10 @@
         -ms-transition: all 0.1s ease 0.2s;
         -o-transition: all 0.1s ease 0.2s;
 
+        @media (min-width:768px) {
+          width: 44px;
+        }
+
         &::after,
         &::before {
           content: "";
@@ -86,14 +110,26 @@
           -moz-transition: all 0.3s ease 0.2s;
           -ms-transition: all 0.3s ease 0.2s;
           -o-transition: all 0.3s ease 0.2s;
+
+          @media (min-width:768px) {
+            height: 5px;
+          }
         }
 
         &::before {
           top: 5px;
+
+          @media (min-width:768px) {
+            top: 8px;
+          }
         }
 
         &::after {
           bottom: 4px;
+
+          @media (min-width:768px) {
+            bottom: 8px;
+          }
         }
       }
 
@@ -107,6 +143,10 @@
             -moz-transform: rotate(45deg);
             -ms-transform: rotate(45deg);
             -o-transform: rotate(45deg);
+
+            @media (min-width:768px) {
+              top: -4px;
+            }
           }
 
           &::after {
@@ -116,6 +156,10 @@
             -moz-transform: rotate(-45deg);
             -ms-transform: rotate(-45deg);
             -o-transform: rotate(-45deg);
+
+            @media (min-width:768px) {
+              bottom: -1px;
+            }
           }
         }
       }
@@ -136,6 +180,11 @@
     width: 100vw;
     min-height: 100vh;
 
+    @media (min-width:768px) {
+      align-items: start;
+      gap: 25px;
+    }
+
     &.open {
       left: 0;
     }
@@ -153,6 +202,11 @@
       -moz-border-radius: 4px;
       -ms-border-radius: 4px;
       -o-border-radius: 4px;
+
+      @media (min-width:768px) {
+      padding: 35px;
+        
+      }
 
       &:hover {
         background-color: $main-red;

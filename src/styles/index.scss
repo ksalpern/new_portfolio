@@ -14,6 +14,11 @@ body.lock {
   display: flex;
   flex-direction: column;
   min-height: 100vh;
+
+  @media (min-width:768px) {
+    padding: 110px 30px 30px;
+
+  }
 }
 
 //class that adds to the header on scroll
@@ -29,7 +34,9 @@ body.lock {
 h1 {
   font-size: calc(46px + (60 - 46) * ((100vw - 320px) / (1920 - 320)));
   text-transform: uppercase;
+  font-weight: 700;
 }
+
 h2 {
   font-size: calc(32px + (42 - 32) * ((100vw - 320px) / (1920 - 320)));
 }
@@ -42,7 +49,8 @@ h4 {
   font-size: calc(26px + (36 - 26) * ((100vw - 320px) / (1920 - 320)));
 }
 
-p {
+p,
+a {
   font-size: calc(20px + (30 - 20) * ((100vw - 320px) / (1920 - 320)));
   font-weight: 500;
 }
