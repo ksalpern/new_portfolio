@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react'
 import { Link } from 'react-router-dom'
 
 import { CgWorkAlt } from 'react-icons/cg'
-import { BsPersonWorkspace } from 'react-icons/bs'
+import { BsPerson } from 'react-icons/bs'
 import { BsTelephone } from 'react-icons/bs'
 import './Header.scss'
 
@@ -58,7 +58,7 @@ const Header = () => {
       </button>
       <nav className={`header__nav ${isBurgerOpen ? 'open' : ''}`}>
         <Link to='projects'>
-          <BsPersonWorkspace />
+          <BsPerson />
           <span>about</span>
         </Link>
         <Link to='/projects'>
