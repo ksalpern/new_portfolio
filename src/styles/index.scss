@@ -8,10 +8,20 @@ body.lock {
 
 .app {
   margin: 0 auto;
-  padding: 30px;
+  padding: 80px 30px 30px;
   width: 100%;
   max-width: 1920px;
   display: flex;
   flex-direction: column;
   min-height: 100vh;
+}
+
+//class that adds to the header on scroll
+.scrolled {
+  top: -60%;
+  transition: top 0.3s ease-in-out;
+  -webkit-transition: top 0.3s ease-in-out;
+  -moz-transition: top 0.3s ease-in-out;
+  -ms-transition: top 0.3s ease-in-out;
+  -o-transition: top 0.3s ease-in-out;
 }

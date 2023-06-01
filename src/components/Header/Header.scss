@@ -1,0 +1,93 @@
+@import '../../styles/variables.scss';
+
+.header {
+  position: fixed;
+  top: 0;
+  left: 50%;
+  padding: $p-20;
+  width: 100%;
+  max-width: 1920px;
+  background-color: $additional-blue;
+  border-bottom: 1px solid $gray;
+  transform: translateX(-50%);
+  -webkit-transform: translateX(-50%);
+  -moz-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  -o-transform: translateX(-50%);
+
+  &__menu {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+
+  &__burger {
+    height: 24px;
+    width: 24px;
+
+    span {
+      position: relative;
+      background-color: $main-orange;
+      display: block;
+      top: 50%;
+      left: 50%;
+      width: 24px;
+      height: 0px;
+      border-radius: 10px;
+      transform: translate(-50%, -50%);
+      transition: all 0.1s ease 0.2s;
+      -webkit-transition: all 0.1s ease 0.2s;
+      -moz-transition: all 0.1s ease 0.2s;
+      -ms-transition: all 0.1s ease 0.2s;
+      -o-transition: all 0.1s ease 0.2s;
+
+      &::after,
+      &::before {
+        content: "";
+        background-color: $main-orange;
+        position: absolute;
+        width: 100%;
+        height: 3px;
+        left: 0;
+        border-radius: 10px;
+        transition: all 0.3s ease 0.2s;
+        -webkit-transition: all 0.3s ease 0.2s;
+        -moz-transition: all 0.3s ease 0.2s;
+        -ms-transition: all 0.3s ease 0.2s;
+        -o-transition: all 0.3s ease 0.2s;
+      }
+
+      &::before {
+        top: 3px;
+      }
+
+      &::after {
+        bottom: 3px;
+      }
+    }
+
+    &.cross {
+      span {
+
+        &::before {
+          top: -2px;
+          transform: rotate(45deg);
+          -webkit-transform: rotate(45deg);
+          -moz-transform: rotate(45deg);
+          -ms-transform: rotate(45deg);
+          -o-transform: rotate(45deg);
+        }
+
+        &::after {
+          bottom: -1px;
+          transform: rotate(-45deg);
+          -webkit-transform: rotate(-45deg);
+          -moz-transform: rotate(-45deg);
+          -ms-transform: rotate(-45deg);
+          -o-transform: rotate(-45deg);
+        }
+      }
+    }
+  }
+
+}

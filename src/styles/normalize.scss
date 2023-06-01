@@ -41,7 +41,7 @@ aside {
 
 html,
 body {
-  overflow-x: hidden;
+  // overflow-x: hidden;
   font-family: Nunito, sans-serif;
   font-style: normal;
   height: 100%;
@@ -67,6 +67,7 @@ input::-ms-clear {
 button {
   border: none;
   text-decoration: none;
+  background: none;
   cursor: pointer;
 }
 
