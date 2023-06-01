@@ -1,5 +1,9 @@
 import React, { useEffect, useState } from 'react'
+import { Link } from 'react-router-dom'
 
+import { CgWorkAlt } from 'react-icons/cg'
+import { BsPersonWorkspace } from 'react-icons/bs'
+import { BsTelephone } from 'react-icons/bs'
 import './Header.scss'
 
 const Header = () => {
@@ -45,14 +49,28 @@ const Header = () => {
   }, [isBurgerOpen])
 
   return (
-    <div className={`header ${isVisible ? '' : 'scrolled'}`}>
+    <header className={`header ${isVisible ? '' : 'scrolled'}`}>
       <button className='header__menu' onClick={toggleBurgerMenu}>
-        <div className={`header__burger ${isBurgerOpen ? 'cross' : ''}`}>
+        <div className={`header__burger ${isBurgerOpen ? 'cross' : 'burger'}`}>
           <span></span>
         </div>
         <p>Menu</p>
       </button>
-    </div>
+      <nav className={`header__nav ${isBurgerOpen ? 'open' : ''}`}>
+        <Link to='projects'>
+          <BsPersonWorkspace />
+          <span>about</span>
+        </Link>
+        <Link to='/projects'>
+          <CgWorkAlt />
+          <span>projects</span>
+        </Link>
+        <Link to='projects'>
+          <BsTelephone />
+          <span>get in touch</span>
+        </Link>
+      </nav>
+    </header>
   )
 }
 
