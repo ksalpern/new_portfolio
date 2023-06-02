@@ -17,7 +17,6 @@ body.lock {
 
   @media (min-width:768px) {
     padding: 110px 30px 30px;
-
   }
 }
 
@@ -38,7 +37,7 @@ h1 {
 }
 
 h2 {
-  font-size: calc(32px + (42 - 32) * ((100vw - 320px) / (1920 - 320)));
+  font-size: calc(34px + (52 - 34) * ((100vw - 320px) / (1920 - 320)));
 }
 
 h3 {
@@ -46,7 +45,7 @@ h3 {
 }
 
 h4 {
-  font-size: calc(26px + (36 - 26) * ((100vw - 320px) / (1920 - 320)));
+  font-size: calc(22px + (36 - 22) * ((100vw - 320px) / (1920 - 320)));
 }
 
 p,
@@ -66,7 +65,7 @@ span {
   }
 
   h2 {
-    font-size: 42px;
+    font-size: 52px;
   }
 
   h3 {

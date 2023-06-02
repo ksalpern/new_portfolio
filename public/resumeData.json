@@ -1,0 +1,233 @@
+{
+  "main": {
+    "name": "Kseniia P",
+    "occupation": "Frontend developer",
+    "description": "I eat, sleep, take photos and breathe React",
+    "image": "profilepic.jpg",
+    "bio": "React frontend developer with a sales background and 1.5 years of hands-on experience with several IT companies in helping create and maintain a better code base for reusability. Experience driving projects forward in the team, facilitating projects from concept to launch. Passionate about learning and development and want to apply skills on a larger development team. I will do my best to achieve the final result!",
+    "email": "ksenia.pidopryhora@gmail.com",
+    "phone": "+380 97 556 2272",
+    "address": {
+      "street": "123 Dev Lane",
+      "city": "Kyiv",
+      "state": "Ukraine",
+      "zip": "01 001"
+    },
+    "website": "https://kseniia-pidopryhora.netlify.app/#portfolio",
+    "resumedownload": "https://drive.google.com/file/d/1FIlO40fvWL2zZKdztR8OmDS8QRj1UMpX/view?usp=sharing",
+    "social": [
+      {
+        "name": "youtube",
+        "url": "https://www.youtube.com/channel/UCRa049ePVPgYCCPacXS7crQ",
+        "className": "fa fa-youtube"
+      },
+
+      {
+        "name": "linkedin",
+        "url": "https://www.linkedin.com/in/kseniia-pidopryhora-44a579236/",
+        "className": "fa fa-linkedin"
+      },
+      {
+        "name": "instagram",
+        "url": "https://instagram.com/ksalpern?igshid=ZDdkNTZiNTM=",
+        "className": "fa fa-instagram"
+      },
+      {
+        "name": "github",
+        "url": "https://github.com/ksalpern",
+        "className": "fa fa-github"
+      }
+    ]
+  },
+  "resume": {
+    "skillmessage": "My Programming Language Proficiency",
+    "education": [
+      {
+        "school": "Sumy national agrarian university - Ukraine",
+        "degree": "Bachelor's Degree, Biotechnology and bioengineering",
+        "graduated": "May 2024"
+      }
+    ],
+    "work": [
+      {
+        "company": "UNIQ",
+        "title": "Frontend developer",
+        "years": "February 2022 - Present",
+        "description": "Work to achieve a balance between functional and aesthetic designs and to solve complex challenges with the utilization of modern web application development processes and standard methodologies"
+      },
+      {
+        "company": "UPWORK",
+        "title": "Frontend developer",
+        "years": "September 2021 - February 2022",
+        "description": "Working as React developer on different projects. E-commerce, portals, marketplaces, corporate websites"
+      },
+      {
+        "company": "USA company",
+        "title": "Sales Manager & Customer Service Specialist",
+        "years": "May 2021 - February 2022",
+        "description": "Helping customers with booking services via phone calls, answering all client's questions, preparing reports on the work done."
+      },
+      {
+        "company": "Volunteering",
+        "title": "Volunteer ",
+        "years": "January 2019 - Present",
+        "description": "Photographer for several events & Participated in the 'My Telephone Friend' initiative, providing psychological support to elderly individuals via phone calls."
+      }
+    ],
+    "skills": [
+      {
+        "name": "HTML",
+        "level": "90%"
+      },
+      {
+        "name": "CSS",
+        "level": "90%"
+      },
+      {
+        "name": "ReactJs",
+        "level": "70%"
+      },
+      {
+        "name": "Redux",
+        "level": "65%"
+      },
+      {
+        "name": "Git & GitHub",
+        "level": "80%"
+      },
+      {
+        "name": "JavaScript",
+        "level": "90%"
+      },
+      {
+        "name": "Web Development",
+        "level": "80%"
+      },
+      {
+        "name": "Next.js",
+        "level": "60%"
+      },
+      {
+        "name": "TypeScript",
+        "level": "60%"
+      }
+    ]
+  },
+  "portfolio": {
+    "projects": [
+      {
+        "title": "AI image generator",
+        "image": "ai-image-generator.png",
+        "url": "https://github.com/ksalpern/ai-image-generator"
+      },
+      {
+        "title": "UA DNA",
+        "image": "uadna.png",
+        "url": "https://digitaldreamvolonteerproject.netlify.app/"
+      },
+      {
+        "title": "Delish",
+        "image": "delish.png",
+        "url": "https://delish-ksalpern.netlify.app/"
+      },
+      {
+        "title": "React Pizza",
+        "image": "reactPizza.png",
+        "url": "https://ks-react-pizza.netlify.app/"
+      },
+      {
+        "title": "Digital Cameras",
+        "image": "DigitalCameras3.png",
+        "url": "https://ecommerce-stripe-zeta.vercel.app/"
+      },
+      {
+        "title": "EduPlatform",
+        "image": "eduPlatform.png",
+        "url": "https://github.com/ksalpern/gnss-ed-testcase"
+      },
+      {
+        "title": "Admin dashboard",
+        "image": "admin.png",
+        "url": "https://admin-dashboard-react-data-app.netlify.app/"
+      },
+      {
+        "title": "Medium clone app",
+        "image": "medium.png",
+        "url": "https://medium-clone-app-iota.vercel.app/"
+      },
+      {
+        "title": "Bulbs shop",
+        "image": "bulbs.png",
+        "url": "https://azalex020204.github.io/Bulbs/"
+      },
+      {
+        "title": "Rootz - nature protection",
+        "image": "rootz.png",
+        "url": "https://halo-lab-test-task.netlify.app/"
+      },
+      {
+        "title": "Solar modals",
+        "image": "twnty.png",
+        "url": "https://twnty-ts-testcase.netlify.app/"
+      },
+   
+      {
+        "title": "Wheels shop",
+        "image": "wheels.jpg",
+        "url": "https://wheelssize.com/"
+      },
+      {
+        "title": "Next.js blog",
+        "image": "next-blog.png",
+        "url": "https://next-sanity-blog-app.vercel.app/"
+      },
+      {
+        "title": "Maslov center",
+        "image": "maslov.png",
+        "url": "https://maslov-center.com/"
+      },
+      {
+        "title": "AutoTK",
+        "image": "Auto.png",
+        "url": "https://autotk.com/"
+      },
+      {
+        "title": "Relvise",
+        "image": "relvise.png",
+        "url": "https://ksalpern.github.io/Relvise/index.html"
+      },
+      {
+        "title": "Whirl",
+        "image": "whirl.png",
+        "url": "https://ksalpern.github.io/Whirl/index.html"
+      },
+      {
+        "title": "NFT ME",
+        "image": "nft-me.png",
+        "url": "https://ksalpern.github.io/NFT-me/index.html"
+      },
+      {
+        "title": "Netflix clone",
+        "image": "Netflix.png",
+        "url": "https://github.com/ksalpern/netflix-clone-app"
+      },
+      {
+        "title": "Lunaria",
+        "image": "lunaria4.png",
+        "url": "https://ks-lunaria.netlify.app/"
+      }
+    ]
+  },
+  "testimonials": {
+    "testimonials": [
+      {
+        "text": "Kseniia works very hard and has a very positive attitude towards learning new things even if it means going out of her comfort zone",
+        "user": "Hammad A."
+      },
+      {
+        "text": "I enjoyed working with Kseniia. She is a very polite, calm, and productive person. She delivered everything that she promised. And went above and beyond our requirements: fixed tons of bugs. And never refused to work on them. I believe she is a rare talent. A+++++",
+        "user": "Rustam R."
+      }
+    ]
+  }
+}
