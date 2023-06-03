@@ -12,11 +12,6 @@
   -moz-transition: all 0.2s ease;
   -ms-transition: all 0.2s ease;
   -o-transition: all 0.2s ease;
-  border-radius: 4px;
-  -webkit-border-radius: 4px;
-  -moz-border-radius: 4px;
-  -ms-border-radius: 4px;
-  -o-border-radius: 4px;
 }
 
 *,
@@ -44,6 +39,7 @@ aside {
   display: block;
 }
 
+html,
 body {
   overflow-x: hidden;
   font-family: Nunito, sans-serif;

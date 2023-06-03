@@ -23,6 +23,10 @@ const App = () => {
           <Route path="/" element={<Home />} />
       </Routes>*/}
       <Projects data={resumeData.portfolio} />
+      {/* <Projects data={resumeData.portfolio} /> */}
+      <Banner />
+
+
     </div>
   );
 }
