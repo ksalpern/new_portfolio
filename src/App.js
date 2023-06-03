@@ -4,6 +4,7 @@ import Header from './components/Header/Header';
 import Banner from './components/Banner/Banner';
 import Projects from './components/Projects/Projects';
 import Quote from './components/Quote/Quote';
+import Footer from './components/Footer/Footer';
 
 const App = () => {
   const [resumeData, setResumeData] = useState({});
@@ -25,6 +26,8 @@ const App = () => {
       </Routes>*/}
       <Projects data={resumeData.portfolio} />
       <Quote />
+
+      <Footer/>
 
     </div>
   );
