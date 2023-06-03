@@ -61,11 +61,11 @@ const Header = () => {
           <BsPerson />
           <span>about</span>
         </Link>
-        <Link to='/projects'>
+        <a href='#projects' onClick={toggleBurgerMenu}>
           <CgWorkAlt />
           <span>projects</span>
-        </Link>
-        <Link to='projects'>
+        </a>
+        <Link to='/contacts'>
           <BsTelephone />
           <span>get in touch</span>
         </Link>

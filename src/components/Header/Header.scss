@@ -2,7 +2,7 @@
 
 .header {
   position: fixed;
-  z-index: 2;
+  z-index: 3;
   top: 0;
   left: 50%;
   padding: $p-20;
@@ -168,7 +168,7 @@
 
   &__nav {
     position: absolute;
-    z-index: 2;
+    z-index: 3;
     left: -150%;
     display: flex;
     align-items: center;
