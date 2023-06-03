@@ -26,7 +26,7 @@ const Projects = ({ data }) => {
     infinite: true,
     autoplay: true,
     rtl: true,
-    autoplaySpeed: 1500,
+    autoplaySpeed: 3500,
     speed: 1500,
     slidesToShow: 3,
     slidesToScroll: 1,
@@ -56,7 +56,7 @@ const Projects = ({ data }) => {
   var settingsRight = {
     infinite: true,
     autoplay: true,
-    autoplaySpeed: 1500,
+    autoplaySpeed: 3500,
     speed: 1500,
     slidesToShow: 3,
     slidesToScroll: 1,
