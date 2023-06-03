@@ -1,0 +1,40 @@
+.quote {
+  margin-top: 60px;
+  padding: 60px 0px;
+  position: relative;
+  height: 150px;
+
+  @media(min-width: 1024px) {
+    padding-top: 160px;
+    gap: 60px;
+  }
+
+  &__background {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-image: url(../../../public/assets/backBlue.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: absolute;
+    width: 120%;
+    height: 100%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+  }
+
+  h3 {
+    white-space: nowrap;
+    transition: 0s;
+    -webkit-transition: 0s;
+    -moz-transition: 0s;
+    -ms-transition: 0s;
+    -o-transition: 0s;
+  }
+}
