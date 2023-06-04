@@ -1,5 +1,4 @@
 import React, { useEffect, useState } from 'react'
-import { Link } from 'react-router-dom'
 
 import { CgWorkAlt } from 'react-icons/cg'
 import { BsPerson } from 'react-icons/bs'
@@ -70,18 +69,18 @@ const Header = () => {
         <p>Menu</p>
       </button>
       <nav className={`header__nav ${isBurgerOpen ? 'open' : ''}`}>
-        <Link to='projects'>
+        <a href='#about'>
           <BsPerson />
           <span>about</span>
-        </Link>
+        </a>
         <a href='#projects' onClick={toggleBurgerMenu}>
           <CgWorkAlt />
           <span>projects</span>
         </a>
-        <Link to='/contacts'>
+        <a href='#contacts'>
           <BsTelephone />
           <span>get in touch</span>
-        </Link>
+        </a>
       </nav>
     </header>
   )
