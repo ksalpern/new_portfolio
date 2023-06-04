@@ -6,6 +6,7 @@ import Quote from './components/Quote/Quote';
 import Footer from './components/Footer/Footer';
 import Testimonials from './components/Testimonials/Testimonials';
 import Contact from './components/Contact/Contact';
+import About from './components/About/About';
 
 const App = () => {
   const [resumeData, setResumeData] = useState({});
@@ -23,6 +24,7 @@ const App = () => {
       <div className="app">
         <Header />
         <Banner />
+        <About data={resumeData.main} />
         <Projects data={resumeData.portfolio} />
       </div>
       <Testimonials data={resumeData.testimonials} />

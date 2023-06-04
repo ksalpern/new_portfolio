@@ -35,7 +35,7 @@ const Footer = ({ data }) => {
   }
 
   return (
-    <div className='footer'>
+    <footer className='footer'>
       <button
         className='footer__scroll'
         title='Back to Top'
@@ -54,7 +54,7 @@ const Footer = ({ data }) => {
           Kseniia P.
         </a>
       </div>
-    </div>
+    </footer>
   )
 }
 

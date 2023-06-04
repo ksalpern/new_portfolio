@@ -4,7 +4,7 @@ import './Banner.scss'
 
 const Banner = () => {
   return (
-    <div className='banner'>
+    <section className='banner'>
       <div className='banner__creativity'>
         <img src='/assets/creativity.svg' alt='creativity' />
         <img src='/assets/creativity2.svg' alt='creativity' />
@@ -25,7 +25,7 @@ const Banner = () => {
           excellence!
         </p>
       </div>
-    </div>
+    </section>
   )
 }
 

@@ -61,7 +61,7 @@ const Contact = () => {
       )
   }
   return (
-    <div className='contact' id='contact'>
+    <section className='contact' id='contact'>
       <h2 className='contact__header'>
         Get in touch <MdEmail />
       </h2>
@@ -102,7 +102,7 @@ const Contact = () => {
           {loading ? 'Sending...' : 'Send'}
         </button>
       </form>
-    </div>
+    </section>
   )
 }
 
