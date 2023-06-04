@@ -85,7 +85,7 @@ const Projects = ({ data }) => {
 
   return (
     <section id='projects' className='projects'>
-      <h2>Check Out My Works.</h2>
+      <h2>Check Out My Works</h2>
 
       <div className='rightSlider'>
         <Slider {...settingsLeft}>

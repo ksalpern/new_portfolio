@@ -9,6 +9,12 @@
     gap: 55px;
   }
 
+  &__header{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+
   &__form {
     display: flex;
     flex-direction: column;

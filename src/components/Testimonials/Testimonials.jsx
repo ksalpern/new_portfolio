@@ -17,7 +17,7 @@ const Testimonials = ({ data }) => {
   }
 
   return (
-    <div className='testimonials'>
+    <div className='testimonials' id='testimonials'>
       <div className='testimonials__text'>
         <h2>Client Testimonials</h2>
         <ul className='slides'>{testimonials}</ul>

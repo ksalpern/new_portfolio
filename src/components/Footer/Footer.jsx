@@ -11,7 +11,7 @@ import './Footer.scss'
 const Footer = ({ data }) => {
   const scrollToTop = () => {
     animateScroll.scrollToTop({
-      duration: 500, //   Adjust the duration as needed for the smooth scroll effect
+      duration: 2000, //   Adjust the duration as needed for the smooth scroll effect
       smooth: 'easeInOutQuart' // Adjust the easing function for the smooth scroll effect
     })
   }

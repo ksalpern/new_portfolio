@@ -3,7 +3,8 @@ import { Link as ScrollLink, animateScroll as scroll } from 'react-scroll'
 
 import { CgWorkAlt } from 'react-icons/cg'
 import { BsPerson } from 'react-icons/bs'
-import { BsTelephone } from 'react-icons/bs'
+import { MdEmail } from 'react-icons/md'
+import { BiCommentDetail } from 'react-icons/bi'
 import './Header.scss'
 
 const Header = () => {
@@ -73,29 +74,38 @@ const Header = () => {
         <ScrollLink
           to='about'
           smooth={true}
-          duration={500}
+          duration={1000}
           onClick={toggleBurgerMenu}
         >
           <BsPerson />
-          <span>about</span>
+          <span>About</span>
         </ScrollLink>
         <ScrollLink
           to='projects'
           smooth={true}
-          duration={500}
+          duration={1000}
           onClick={toggleBurgerMenu}
         >
           <CgWorkAlt />
-          <span>projects</span>
+          <span>Projects</span>
+        </ScrollLink>
+        <ScrollLink
+          to='testimonials'
+          smooth={true}
+          duration={1000}
+          onClick={toggleBurgerMenu}
+        >
+          <BiCommentDetail />
+          <span>Testimonials</span>
         </ScrollLink>
         <ScrollLink
           to='contact'
           smooth={true}
-          duration={500}
+          duration={1000}
           onClick={toggleBurgerMenu}
         >
-          <BsTelephone />
-          <span>get in touch</span>
+          <MdEmail />
+          <span>Get in touch</span>
         </ScrollLink>
       </nav>
     </header>

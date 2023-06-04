@@ -1,6 +1,7 @@
 import React, { useRef, useState } from 'react'
 import emailjs from '@emailjs/browser'
 
+import { MdEmail } from 'react-icons/md'
 import './Contact.scss'
 
 const Contact = () => {
@@ -61,40 +62,39 @@ const Contact = () => {
   }
   return (
     <div className='contact' id='contact'>
-      <h2 className=''>Get in touch</h2>
+      <h2 className='contact__header'>
+        Get in touch <MdEmail />
+      </h2>
 
       <form ref={formRef} onSubmit={handleSubmit} className='contact__form'>
         <label className='contact__form-name'>
-          <span className=''>Your Name</span>
+          <span>Your Name</span>
           <input
             type='text'
             name='name'
             value={form.name}
             onChange={handleChange}
-            placeholder="What's your good name?"
-            className=''
+            placeholder='How should I refer to you?'
           />
         </label>
         <label className='contact__form-email'>
-          <span className=''>Your email</span>
+          <span>Your email</span>
           <input
             type='email'
             name='email'
             value={form.email}
             onChange={handleChange}
-            placeholder="What's your web address?"
-            className=''
+            placeholder='emailexample@gmail.com'
           />
         </label>
         <label className='contact__form-message'>
-          <span className=''>Your Message</span>
+          <span>Your Message</span>
           <textarea
             rows={7}
             name='message'
             value={form.message}
             onChange={handleChange}
-            placeholder='What do you want to say?'
-            className=''
+            placeholder="I find your website attractive and appealing let's make a new one together!"
           />
         </label>
 
