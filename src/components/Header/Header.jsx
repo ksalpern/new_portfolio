@@ -8,8 +8,7 @@ import './Header.scss'
 
 const Header = () => {
   const [isBurgerOpen, setIsBurgerOpen] = useState(false)
-  const [prevScrollPos, setPrevScrollPos] = useState(0)
-  const [isVisible, setIsVisible] = useState(true)
+  const [isScrolled, setIsScrolled] = useState(false)
 
   // toggle burger function
   const toggleBurgerMenu = () => {
@@ -18,18 +17,32 @@ const Header = () => {
 
   // hides header on down scroll and shows on up scroll
   useEffect(() => {
+    let prevScrollPos = window.pageYOffset
+
     const handleScroll = () => {
       const currentScrollPos = window.pageYOffset
+      const isScrolledUp = prevScrollPos < currentScrollPos
+      setIsScrolled(isScrolledUp)
+      prevScrollPos = currentScrollPos
 
-      setIsVisible(prevScrollPos > currentScrollPos)
-      setPrevScrollPos(currentScrollPos)
+      const header = document.querySelector('header')
+
+      if (isBurgerOpen) {
+        header?.classList.remove('scrolled')
+        return
+      }
+      if (isScrolledUp) {
+        header?.classList.add('scrolled')
+      } else {
+        header?.classList.remove('scrolled')
+      }
     }
 
     window.addEventListener('scroll', handleScroll)
     return () => {
       window.removeEventListener('scroll', handleScroll)
     }
-  }, [prevScrollPos])
+  }, [isBurgerOpen])
 
   // Update the body class based on the burger state
   // it prevents scroll when burger menu is opened
@@ -49,7 +62,7 @@ const Header = () => {
   }, [isBurgerOpen])
 
   return (
-    <header className={`header ${isVisible ? '' : 'scrolled'}`}>
+    <header className={`header`}>
       <button className='header__menu' onClick={toggleBurgerMenu}>
         <div className={`header__burger ${isBurgerOpen ? 'cross' : 'burger'}`}>
           <span></span>

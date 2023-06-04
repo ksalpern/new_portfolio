@@ -1,11 +1,11 @@
-import React, { useEffect, useState } from 'react'
+import React from 'react'
 import { animateScroll } from 'react-scroll'
 
 import { AiFillGithub } from 'react-icons/ai'
 import { AiFillLinkedin } from 'react-icons/ai'
 import { AiFillInstagram } from 'react-icons/ai'
 import { AiFillYoutube } from 'react-icons/ai'
-import { IoMdArrowRoundUp } from 'react-icons/io'
+import { BiUpArrow } from 'react-icons/bi'
 import './Footer.scss'
 
 const Footer = ({ data }) => {
@@ -36,45 +36,24 @@ const Footer = ({ data }) => {
 
   return (
     <div className='footer'>
-      {/* <a className='footer__scroll' title='Back to Top' href='#home'>
-        <BiUpArrow />
-      </a> */}
       <button
         className='footer__scroll'
         title='Back to Top'
         onClick={scrollToTop}
       >
-        <IoMdArrowRoundUp />
+        <BiUpArrow />
       </button>
       <div className='footer__links'>{networks}</div>
       <div className='footer__me'>
         <span> Made by</span>
-        <a title='Kseniia P.' href='https://github.com/ksalpern/'>
+        <a
+          title='Kseniia P.'
+          href='https://www.linkedin.com/in/kseniia-pidopryhora-44a579236/'
+          target='_blank'
+        >
           Kseniia P.
         </a>
       </div>
-
-      {/* <a href='https://github.com/ksalpern' target='_blank'>
-        <AiFillGithub />
-      </a>
-      <a
-        href='https://www.linkedin.com/in/kseniia-pidopryhora-44a579236/'
-        target='_blank'
-      >
-        <AiFillLinkedin />
-      </a>
-      <a
-        href='https://instagram.com/ksalpern?igshid=ZDdkNTZiNTM='
-        target='_blank'
-      >
-        <AiFillInstagram />
-      </a>
-      <a
-        href='https://www.youtube.com/channel/UCRa049ePVPgYCCPacXS7crQ'
-        target='_blank'
-      >
-        <AiFillYoutube />
-      </a> */}
     </div>
   )
 }
