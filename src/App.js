@@ -27,7 +27,7 @@ const App = () => {
       <Projects data={resumeData.portfolio} />
       <Quote />
 
-      <Footer/>
+      <Footer data={resumeData.main} />
 
     </div>
   );

@@ -50,7 +50,8 @@ h4 {
 }
 
 p,
-a {
+a,
+button {
   font-size: calc(20px + (30 - 20) * ((100vw - 320px) / (1920 - 320)));
   font-weight: 500;
 }
@@ -77,11 +78,9 @@ span {
     font-size: 36px;
   }
 
-  p {
-    font-size: 30px;
-  }
-
-  span {
+  p,
+  span,
+  button {
     font-size: 30px;
   }
 }

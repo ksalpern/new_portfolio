@@ -2,20 +2,74 @@
 
 .footer {
   margin: 0 auto;
-  padding-top: 30px;
+  padding-top: 50px;
   display: flex;
+  flex-direction: column;
   align-items: center;
-  gap: 15px;
+  gap: 20px;
   border-top: 1px solid $gray;
+  position: relative;
 
-
-  a {
-    font-size: calc(24px + (36 - 24) * ((100vw - 320px) / (1920 - 320)));
-  }
-
+  button:hover,
   a:hover {
-    scale: 1.2;
+    scale: 1.1;
     opacity: .9;
     color: $main-white;
+  }
+
+  &__scroll {
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: $additional-blue;
+    position: absolute;
+    height: 45px;
+    width: 45px;
+    top: -25px;
+    left: 50%;
+    transform: translateX(-50%);
+    -webkit-transform: translateX(-50%);
+    -moz-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    -o-transform: translateX(-50%);
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+
+    &:hover {
+      border-radius: 50px;
+      -webkit-border-radius: 50px;
+      -moz-border-radius: 50px;
+      -ms-border-radius: 50px;
+      -o-border-radius: 50px;
+    }
+  }
+
+  &__links {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 25px;
+
+    a {
+      font-size: calc(24px + (36 - 24) * ((100vw - 320px) / (1920 - 320)));
+    }
+
+    a:hover {
+      scale: 1.2;
+    }
+  }
+
+  &__me {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+
+    span {
+      color: rgba(159, 159, 159, 0.853);
+    }
   }
 }
