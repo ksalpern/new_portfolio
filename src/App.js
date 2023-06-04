@@ -4,6 +4,7 @@ import Banner from './components/Banner/Banner';
 import Projects from './components/Projects/Projects';
 import Quote from './components/Quote/Quote';
 import Footer from './components/Footer/Footer';
+import Testimonials from './components/Testimonials/Testimonials';
 
 const App = () => {
   const [resumeData, setResumeData] = useState({});
@@ -17,13 +18,18 @@ const App = () => {
   }, []);
 
   return (
-    <div className="app">
-      <Header />
-      <Banner />
-      <Projects data={resumeData.portfolio} />
-      <Quote />
-      <Footer data={resumeData.main} />
-    </div>
+    <>
+      <div className="app">
+        <Header />
+        <Banner />
+        <Projects data={resumeData.portfolio} />
+      </div>
+      <Testimonials data={resumeData.testimonials} />
+      <div className="app">
+        <Quote />
+        <Footer data={resumeData.main} />
+      </div>
+    </>
   );
 }
 

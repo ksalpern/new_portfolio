@@ -9,16 +9,12 @@ body.lock {
 .app {
   overflow-x: hidden;
   margin: 0 auto;
-  padding: 80px 30px 30px;
+  padding: 0px 30px 30px;
   width: 100%;
   max-width: 1920px;
   display: flex;
   flex-direction: column;
-  min-height: 100vh;
-
-  @media (min-width:768px) {
-    padding: 110px 30px 30px;
-  }
+  // min-height: 100vh;
 }
 
 //class that adds to the header on scroll

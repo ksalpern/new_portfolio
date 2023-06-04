@@ -1,0 +1,63 @@
+@import '../../styles/variables.scss';
+@import url(https://fonts.googleapis.com/css?family=Libre+Baskerville:regular,italic,700);
+
+.testimonials {
+  background: #1F1F1F url(../../../public/assets/4.jpeg) no-repeat center center;
+  background-size: cover;
+  -webkit-background-size: cover;
+  background-attachment: fixed;
+  position: relative;
+  min-height: 400px;
+  width: 100%;
+  overflow: hidden;
+  margin-top: 80px;
+  position: relative;
+  transition: 0s;
+  -webkit-transition: 0s;
+  -moz-transition: 0s;
+  -ms-transition: 0s;
+  -o-transition: 0s;
+
+  &::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    // background-color: hsla(13, 92%, 57%, 0.1);
+    background-color: hsla(0, 0%, 12%, 0.2);
+  }
+
+
+  &__text {
+    padding: 40px 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 35px;
+
+    @media (min-width:768px) {
+      gap: 65px;
+      padding: 65px 35px;
+
+    }
+
+    ul {
+      display: flex;
+      flex-direction: column;
+      gap: 25px;
+    }
+
+    p,
+    cite {
+      font-family: 'Libre Baskerville', serif;
+      font-weight: 400;
+      color: $main-white;
+      // font-style: italic;
+    }
+
+    p {
+      margin-bottom: 15px;
+    }
+  }
+}
