@@ -10,6 +10,11 @@
   border-top: 1px solid $additional-blue;
   position: relative;
 
+  @media (min-width:1024px) {
+    padding-top: 60px;
+
+  }
+
   button:hover,
   a:hover {
     scale: 1.1;
@@ -38,6 +43,12 @@
     -moz-border-radius: 10px;
     -ms-border-radius: 10px;
     -o-border-radius: 10px;
+
+    @media (min-width:1024px) {
+      height: 60px;
+      width: 60px;
+      top: -35px;
+    }
 
     &:hover {
       border-radius: 50px;
