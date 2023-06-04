@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react'
-import { Link as ScrollLink, animateScroll as scroll } from 'react-scroll'
+import { Link as ScrollLink} from 'react-scroll'
 
 import { CgWorkAlt } from 'react-icons/cg'
 import { BsPerson } from 'react-icons/bs'
