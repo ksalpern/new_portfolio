@@ -5,6 +5,7 @@ import Projects from './components/Projects/Projects';
 import Quote from './components/Quote/Quote';
 import Footer from './components/Footer/Footer';
 import Testimonials from './components/Testimonials/Testimonials';
+import Contact from './components/Contact/Contact';
 
 const App = () => {
   const [resumeData, setResumeData] = useState({});
@@ -26,6 +27,7 @@ const App = () => {
       </div>
       <Testimonials data={resumeData.testimonials} />
       <div className="app">
+        <Contact/>
         <Quote />
         <Footer data={resumeData.main} />
       </div>

@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react'
+import { Link as ScrollLink, animateScroll as scroll } from 'react-scroll'
 
 import { CgWorkAlt } from 'react-icons/cg'
 import { BsPerson } from 'react-icons/bs'
@@ -69,18 +70,33 @@ const Header = () => {
         <p>Menu</p>
       </button>
       <nav className={`header__nav ${isBurgerOpen ? 'open' : ''}`}>
-        <a href='#about'>
+        <ScrollLink
+          to='about'
+          smooth={true}
+          duration={500}
+          onClick={toggleBurgerMenu}
+        >
           <BsPerson />
           <span>about</span>
-        </a>
-        <a href='#projects' onClick={toggleBurgerMenu}>
+        </ScrollLink>
+        <ScrollLink
+          to='projects'
+          smooth={true}
+          duration={500}
+          onClick={toggleBurgerMenu}
+        >
           <CgWorkAlt />
           <span>projects</span>
-        </a>
-        <a href='#contacts'>
+        </ScrollLink>
+        <ScrollLink
+          to='contact'
+          smooth={true}
+          duration={500}
+          onClick={toggleBurgerMenu}
+        >
           <BsTelephone />
           <span>get in touch</span>
-        </a>
+        </ScrollLink>
       </nav>
     </header>
   )
