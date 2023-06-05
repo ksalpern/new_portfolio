@@ -120,6 +120,7 @@
   .leftSlider .slick-arrow.slick-prev {
     left: 0;
     background: none;
+    pointer-events: none;
   }
 
   .rightSlider .slick-arrow.slick-prev {
@@ -146,6 +147,7 @@
   .rightSlider .slick-arrow.slick-next {
     right: 0;
     background: none;
+    pointer-events: none;
   }
 
   .leftSlider .slick-arrow.slick-next {
