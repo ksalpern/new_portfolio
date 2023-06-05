@@ -68,6 +68,9 @@ button {
   text-decoration: none;
   background: none;
   cursor: pointer;
+  outline: none;
+  user-select: none;
+  -webkit-tap-highlight-color: transparent; /* For older iOS versions */
 }
 
 button::-moz-focus-inner {
