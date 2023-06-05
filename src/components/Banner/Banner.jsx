@@ -12,15 +12,13 @@ const Banner = () => {
         <img src='/assets/creativity2.svg' alt='creativity' />
       </div>
       <div className='banner__mainImg'>
-        <img
-          src='https://images.pexels.com/photos/17028693/pexels-photo-17028693/free-photo-of-man-love-people-woman.jpeg?auto=compress&cs=tinysrgb&w=400&lazy=load'
-          alt='me'
-        />
+        <img src='/assets/bannerpic.jpeg' alt='me' />
       </div>
       <div className='banner__text'>
         <h1>Design with code, code with passion</h1>
         <p>
-        Let’s see how we can boost your projects to achieve outstanding results!
+          Let’s see how we can boost your projects to achieve outstanding
+          results!
         </p>
       </div>
     </section>

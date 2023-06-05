@@ -5,15 +5,6 @@
     "description": "I eat, sleep, take photos and breathe React",
     "image": "profilepic.jpg",
     "bio": "I love creating engaging and accessible web experiences for users. I use cutting-edge technologies and frameworks to build responsive and user-friendly web solutions. I’m always learning new skills and collaborating with other developers and designers to turn ideas into visually stunning and interactive web products. I’m passionate about personal growth, both mentally and physically. I’m motivated and driven by tangible results. I work well in teams where effective communication leads to success.",
-    "email": "ksenia.pidopryhora@gmail.com",
-    "phone": "+380 97 556 2272",
-    "address": {
-      "street": "123 Dev Lane",
-      "city": "Kyiv",
-      "state": "Ukraine",
-      "zip": "01 001"
-    },
-    "website": "https://kseniia-pidopryhora.netlify.app/#portfolio",
     "resumedownload": "https://drive.google.com/file/d/1FIlO40fvWL2zZKdztR8OmDS8QRj1UMpX/view?usp=sharing",
     "social": [
       {

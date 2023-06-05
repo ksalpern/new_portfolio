@@ -1,12 +1,10 @@
-import React, { useEffect, useState } from 'react'
-// import { useInView } from 'react-intersection-observer';
+import React, { useState } from 'react'
 import Slider from 'react-slick'
 
 import { BsLink } from 'react-icons/bs'
 import './Projects.scss'
 
 const Projects = ({ data }) => {
-  // const { ref, inView, entry } = useInView(options);
   const [hoveredItem, setHoveredItem] = useState(null)
 
   const handleMouseEnter = title => {

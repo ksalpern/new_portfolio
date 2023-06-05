@@ -1,9 +1,17 @@
 import React, { useEffect, useRef } from 'react'
 import { gsap } from 'gsap'
 
-import { SiHtml5, SiCss3, SiJavascript, SiReact, SiNextdotjs, SiRedux, SiGit, SiGithub } from 'react-icons/si';
-import { GrGraphQl } from 'react-icons/gr';
-import { SiTailwindcss, SiBootstrap } from 'react-icons/si';
+import {
+  SiHtml5,
+  SiCss3,
+  SiJavascript,
+  SiReact,
+  SiNextdotjs,
+  SiRedux,
+  SiGit
+} from 'react-icons/si'
+import { GrGraphQl } from 'react-icons/gr'
+import { SiTailwindcss } from 'react-icons/si'
 import './SkillSnake.scss'
 
 const Snake = () => {
@@ -18,8 +26,8 @@ const Snake = () => {
     { name: 'Redux', icon: <SiRedux /> },
     { name: 'Git', icon: <SiGit /> },
     { name: 'GraphQL', icon: <GrGraphQl /> },
-    { name: 'Tailwind CSS', icon: <SiTailwindcss /> },
-  ];
+    { name: 'Tailwind CSS', icon: <SiTailwindcss /> }
+  ]
 
   useEffect(() => {
     const icons = iconsRef.current

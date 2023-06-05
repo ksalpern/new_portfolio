@@ -12,7 +12,7 @@ const Quote = () => {
     gsap.fromTo(
       textElement,
       { x: '200%' }, // Initial position off the right edge of the container
-      { x: '-200%', duration: 10, ease: 'none', repeat: -1 } // Move to the left edge of the container over 5 seconds and repeat infinitely
+      { x: '-200%', duration: 10, ease: 'none', repeat: -1 } // Move to the left edge of the container over 10 seconds and repeat infinitely
     )
 
     return () => {
