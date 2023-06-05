@@ -10,7 +10,6 @@ const Banner = () => {
         <img src='/assets/creativity2.svg' alt='creativity' />
         <img src='/assets/creativity2.svg' alt='creativity' />
         <img src='/assets/creativity2.svg' alt='creativity' />
-        {/* <img src='/assets/creativity2.svg' alt='creativity' /> */}
       </div>
       <div className='banner__mainImg'>
         <img
@@ -21,8 +20,7 @@ const Banner = () => {
       <div className='banner__text'>
         <h1>Design with code, code with passion</h1>
         <p>
-          Let’s find out how we can elevate your projects to new standards of
-          excellence!
+        Let’s see how we can boost your projects to achieve outstanding results!
         </p>
       </div>
     </section>

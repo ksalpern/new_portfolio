@@ -32,17 +32,15 @@
     height: 45px;
     width: 45px;
     top: -25px;
-    left: 50%;
-    transform: translateX(-50%);
-    -webkit-transform: translateX(-50%);
-    -moz-transform: translateX(-50%);
-    -ms-transform: translateX(-50%);
-    -o-transform: translateX(-50%);
+    left: 40%;
     border-radius: 10px;
     -webkit-border-radius: 10px;
     -moz-border-radius: 10px;
     -ms-border-radius: 10px;
     -o-border-radius: 10px;
+    animation-name: up;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
 
     @media (min-width:1024px) {
       height: 60px;
@@ -56,6 +54,34 @@
       -moz-border-radius: 50px;
       -ms-border-radius: 50px;
       -o-border-radius: 50px;
+    }
+
+
+
+    @keyframes up {
+      0% {
+        transform: translateY(0px);
+        -webkit-transform: translateY(0px);
+        -moz-transform: translateY(0px);
+        -ms-transform: translateY(0px);
+        -o-transform: translateY(0px);
+      }
+
+      50% {
+        transform: translateY(-10px);
+        -webkit-transform: translateY(-10px);
+        -moz-transform: translateY(-10px);
+        -ms-transform: translateY(-10px);
+        -o-transform: translateY(-10px);
+      }
+
+      100% {
+        transform: translateY(0px);
+        -webkit-transform: translateY(0px);
+        -moz-transform: translateY(0px);
+        -ms-transform: translateY(0px);
+        -o-transform: translateY(0px);
+      }
     }
   }
 
