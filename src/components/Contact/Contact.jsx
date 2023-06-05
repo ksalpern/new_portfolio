@@ -1,6 +1,7 @@
 import React, { useRef, useState } from 'react'
 import emailjs from '@emailjs/browser'
 
+import { BsSendFill } from 'react-icons/bs'
 import { MdEmail } from 'react-icons/md'
 import './Contact.scss'
 
@@ -99,7 +100,7 @@ const Contact = () => {
         </label>
 
         <button type='submit' className='contact__form-button'>
-          {loading ? 'Sending...' : 'Send'}
+          {loading ? 'Sending...' : 'Send'} <BsSendFill />
         </button>
       </form>
     </section>

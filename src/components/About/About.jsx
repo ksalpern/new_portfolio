@@ -1,34 +1,36 @@
 import React, { useEffect, useRef } from 'react'
 import { Link as ScrollLink } from 'react-scroll'
-import { gsap } from 'gsap';
-import { ScrollTrigger } from 'gsap/ScrollTrigger';
+import { gsap } from 'gsap'
+import { ScrollTrigger } from 'gsap/ScrollTrigger'
 
+import { BiCloudDownload } from 'react-icons/bi'
+import { MdEmail } from 'react-icons/md'
 import SkillSnake from '../SkillSnake/SkillSnake'
 import './About.scss'
 
-gsap.registerPlugin(ScrollTrigger);
+gsap.registerPlugin(ScrollTrigger)
 
 const About = ({ data }) => {
-  const sectionRef = useRef(null);
+  const sectionRef = useRef(null)
 
   useEffect(() => {
-    const section = sectionRef.current;
-    const elements = section.querySelectorAll('.animate-element');
+    const section = sectionRef.current
+    const elements = section.querySelectorAll('.animate-element')
 
     gsap.from(elements, {
       opacity: 0,
-      x: (index) => (index % 2 === 0 ? -40 : 40),
+      x: index => (index % 2 === 0 ? -40 : 40),
       duration: 1,
       ease: 'power3.out',
       scrollTrigger: {
         trigger: section,
-        start: 'top 90%',
+        start: 'top 80%',
         scrub: true,
         toggleActions: 'restart none none reverse',
-        repeat: -1,
-      },
-    });
-  }, []);
+        repeat: -1
+      }
+    })
+  }, [])
 
   if (data) {
     var name = data.name
@@ -47,13 +49,13 @@ const About = ({ data }) => {
         </div>
         <div className='about__text animate-element'>
           <p>
-            Hey, I'm {name}! {bio}
+            Hi there, I’m {name}, a frontend developer from Kyiv, Ukraine. {bio}
           </p>
         </div>
       </div>
       <div className='about__links animate-element'>
         <a href={resume} target='_blank' title='Download cv'>
-          Download cv
+          <BiCloudDownload /> Download cv
         </a>
         <ScrollLink
           to='contact'
@@ -61,6 +63,7 @@ const About = ({ data }) => {
           duration={1000}
           className='about__button'
         >
+          <MdEmail />
           Contact me
         </ScrollLink>
       </div>

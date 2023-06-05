@@ -65,10 +65,11 @@
   a {
     cursor: pointer;
     display: flex;
-    // align-items: center;
+    align-items: center;
     justify-content: center;
-    // align-self: center;
-    width: calc(160px + (260 - 160) * ((100vw - 320px) / (1920 - 320)));
+    align-self: center;
+    gap: 5px;
+    width: calc(180px + (260 - 180) * ((100vw - 320px) / (1920 - 320)));
     padding: 20px;
     background-color: $main-orange;
     border-radius: 20px;
