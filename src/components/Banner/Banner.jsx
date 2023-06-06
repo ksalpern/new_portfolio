@@ -12,7 +12,7 @@ const Banner = () => {
         <img src='/assets/creativity2.svg' alt='creativity' />
       </div>
       <div className='banner__mainImg'>
-        <img src='/assets/bannerpic.jpeg' alt='me' />
+        <img src='/assets/bannerpic.jpg' alt='me' />
       </div>
       <div className='banner__text'>
         <h1>Design with code, code with passion</h1>
