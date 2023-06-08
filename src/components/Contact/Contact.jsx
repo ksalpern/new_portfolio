@@ -31,8 +31,8 @@ const Contact = () => {
 
     emailjs
       .send(
-        'your service id',
-        'your template id',
+        'service_zshbeks',
+        'template_l7cslvk',
         {
           from_name: form.name,
           to_name: 'Kseniia',
@@ -40,7 +40,7 @@ const Contact = () => {
           to_email: 'ksenia.pidopryhora@gmail.com',
           message: form.message
         },
-        'your public key'
+        'mJtCH0jRwVBcltZpq'
       )
       .then(
         () => {
@@ -76,6 +76,7 @@ const Contact = () => {
             value={form.name}
             onChange={handleChange}
             placeholder='How should I refer to you?'
+            required
           />
         </label>
         <label className='contact__form-email'>
@@ -86,6 +87,7 @@ const Contact = () => {
             value={form.email}
             onChange={handleChange}
             placeholder='emailexample@gmail.com'
+            required
           />
         </label>
         <label className='contact__form-message'>
@@ -96,7 +98,8 @@ const Contact = () => {
             value={form.message}
             onChange={handleChange}
             placeholder="I find your website attractive and appealing let's make a new one together!"
-          />
+            required
+         />
         </label>
 
         <button type='submit' className='contact__form-button'>
