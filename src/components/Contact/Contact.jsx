@@ -31,8 +31,8 @@ const Contact = () => {
 
     emailjs
       .send(
-        'service_zshbeks',
-        'template_l7cslvk',
+        'service_ID',
+        'template_ID',
         {
           from_name: form.name,
           to_name: 'Kseniia',
@@ -40,7 +40,7 @@ const Contact = () => {
           to_email: 'ksenia.pidopryhora@gmail.com',
           message: form.message
         },
-        'mJtCH0jRwVBcltZpq'
+        'PUBLIC_KEY'
       )
       .then(
         () => {
