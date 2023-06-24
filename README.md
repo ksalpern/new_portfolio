@@ -2,7 +2,7 @@
 
 Hey my friends! Here is repo with my personal portfolio. Click [here](https://ksalpern-portfolio.vercel.app/) to see my portfolio or [here](https://www.youtube.com/watch?v=i3-ZOFAFc_Y) to see how it looks in my computer😃
 
-![result](portf.jpg)
+![result](./public/portf.jpg)
 
 ## Follow this steps to start project on your local machine:
 
